@@ -15,11 +15,19 @@
     <section id="landing">
         <nav>
             <div class="row nav__row">
-                <div class="nav__logo">
-                <!--  -->Nav Logo here<!--  -->
+                <a href="#" class="nav__logo">
+                    <img class="nav__logo--img" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="Treact logo">
+                    <div class="nav__logo--title">Treact</div>
+                </a>
+                <div class="nav__links">
+                    <a href="#features" class="nav__link">About</a>
+                    <a href="#" class="nav__link">Blog</a>
+                    <a href="#pricing" class="nav__link">Pricing</a>
+                    <a href="#start" class="nav__link">Contact Us</a>
+                    <a href="#" class="nav__link login">Login</a>
+                    <a href="#" class="nav__link nav__link--primary">Sign Up</a>
                 </div>
-                <!--  -->Enter Nav Links here<!--  -->
-                <button class="btn__menu" onclick="openMenu()">
+                <button class="btn__menu" onclick="openMenu()" aria-label="Open menu">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="btn__menu--svg">
@@ -31,21 +39,21 @@
             </div>
         </nav>
         <div class="modal">
-            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()" aria-label="Close menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="light___StyledCloseIcon-lj69nl-14 fASujC">
+                    class="btn__menu--svg">
                     <line x1="18" y1="6" x2="6" y2="18"></line>
                     <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
             </button>
             <div class="modal__links">
-                <a class="modal__link">About</a>
-                <a class="modal__link">Blog</a>
-                <a class="modal__link">Pricing</a>
-                <a class="modal__link">Contact Us</a>
-                <a class="modal__link">Login</a>
-                <a class="modal__link modal__link--primary">Sign Up</a>
+                <a href="#features" class="modal__link" onclick="closeMenu()">About</a>
+                <a href="#" class="modal__link" onclick="closeMenu()">Blog</a>
+                <a href="#pricing" class="modal__link" onclick="closeMenu()">Pricing</a>
+                <a href="#start" class="modal__link" onclick="closeMenu()">Contact Us</a>
+                <a href="#" class="modal__link" onclick="closeMenu()">Login</a>
+                <a href="#" class="modal__link modal__link--primary" onclick="closeMenu()">Sign Up</a>
             </div>
         </div>
         <header>

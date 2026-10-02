@@ -602,6 +602,79 @@ VALUES ↓
     align-items: center;
 }
 
+#values .section__title {
+    line-height: 1.25;
+    margin-bottom: 32px;
+}
+
+#values .btn {
+    margin-top: 48px;
+}
+
+.values__description,
+.values__img {
+    width: 50%;
+}
+
+.values__description {
+    padding: 32px 64px 32px 0;
+}
+
+.values__list {
+    display: flex;
+}
+
+.value {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 32px;
+}
+
+.value:first-child {
+    margin-right: 32px;
+}
+
+.value__title {
+    display: flex;
+    align-items: center;
+}
+
+.value__img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.value:nth-child(1) .value__img--wrapper {
+    background-color: #9ae6b4;
+}
+
+.value:nth-child(2) .value__img--wrapper {
+    background-color: #feb2b2;
+}
+
+.value__img {
+    width: 20px;
+    height: 20px;
+}
+
+.value__name {
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.value__para {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.625;
+    color: #718096;
+}
+
 
 /*
 
